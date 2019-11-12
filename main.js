@@ -31,7 +31,7 @@ arrow.addEventListener("click", scrollUp);
 // Make arrow hidden until user has scrolled down the page
 // NB fade-in is in CSS
 window.onscroll = function() {
-  if (document.documentElement.scrollTop > 20) {
+  if (document.documentElement.scrollTop > 40) {
     arrow.style.display = 'block'
   } else {
     arrow.style.display = 'none'

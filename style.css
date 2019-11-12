@@ -55,4 +55,5 @@ i:hover {
   color: rgba(221, 139, 6, 0.911);
   transition: 1s;
   opacity: 1;
+  cursor: pointer;
 }

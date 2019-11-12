@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth
+}
+
 body {
   margin: 20px;
   padding: 0;
@@ -32,4 +36,23 @@ body {
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+i {
+  color: rgb(173, 129, 79);
+  font-size: 40px;
+  position: fixed;
+  bottom: 20px;
+  opacity: 0.5;
+}
+
+i:hover {
+  color: rgba(221, 139, 6, 0.911);
+  transition: 1s;
+  opacity: 1;
 }

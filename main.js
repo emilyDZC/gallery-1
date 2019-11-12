@@ -22,3 +22,23 @@ function imgClick(e) {
   // Change the opacity to the variable amount
   e.target.style.opacity = opacity;
 }
+
+// Scroll arrow function
+const arrow = document.getElementById("arrow");
+// Add click event listener that will trigger scroll up
+arrow.addEventListener("click", scrollUp);
+
+// Make arrow hidden until user has scrolled down the page
+// NB fade-in is in CSS
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 20) {
+    arrow.style.display = 'block'
+  } else {
+    arrow.style.display = 'none'
+  }
+}
+
+// Scroll to top when arrow clicked
+function scrollUp(e) {
+  document.documentElement.scrollTop = 0
+}
